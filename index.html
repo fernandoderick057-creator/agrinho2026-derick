@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="stylesheet" href="style.css">    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
+
+</head>
+<body>
+
+<!-- Barra -->
+<div id="barraNivel">
+<div id="iconeArvore">🌳</div>
+
+<div class="nivel" id="n5"></div>
+<div class="nivel" id="n4"></div>
+<div class="nivel" id="n3"></div>
+<div class="nivel" id="n2"></div>
+<div class="nivel" id="n1"></div>
+
+<div id="iconeFogo">🔥</div>
+</div>
+
+<header>
+<h1>🌱 Agrinho 2026</h1>
+<br>
+<button onclick="modoNoite()" id="botaoTema">
+🌙 Modo Noite
+</button>
+</header>
+
+<section class="hero">
+<div>
+<h1>Agro forte, futuro sustentável</h1>
+<p>Equilíbrio entre a produção e o meio ambiente.</p>
+</div>
+</section>
+
+<section>
+<h2>🌾 A força do Agro</h2>
+
+<div class="cards">
+
+<div class="card-flip">
+
+<div class="card-frente">
+<h3>🍅 Produção de Alimentos</h3>
+<p>O campo alimenta milhões de pessoas todos os dias.</p>
+</div>
+
+<div class="card-verso">
+<h3>🌱 Saiba Mais</h3>
+<p>
+O Brasil está entre os maiores produtores agrícolas do mundo,
+fornecendo alimentos para o mercado interno e para exportação.
+</p>
+</div>
+
+</div>
+
+<div class="card-flip">
+
+<div class="card-frente">
+<h3>💼 Geração de Empregos</h3>
+<p>O agronegócio movimenta a economia.</p>
+</div>
+
+<div class="card-verso">
+<h3>🌱 Saiba Mais</h3>
+<p>
+Milhões de pessoas trabalham direta ou indiretamente no
+agronegócio, desde o plantio até o transporte dos produtos.
+</p>
+</div>
+
+</div>
+
+<div class="card-flip">
+
+<div class="card-frente">
+<h3>🧑‍🌾 Tecnologia</h3>
+<p>Máquinas modernas ajudam a produzir melhor.</p>
+</div>
+
+<div class="card-verso">
+<h3>🌱 Saiba Mais</h3>
+<p>
+Drones, sensores e máquinas inteligentes ajudam a aumentar
+a produtividade e reduzir desperdícios.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="areaArvore">
+<h2>🌳 Plante o Futuro</h2>
+<br>
+<p style="font-size:24px;">
+Árvores plantadas: <span id="contador">0</span>
+</p>
+<br>
+
+<button class="btn-plantar" onclick="plantarArvore()">
+🌱 Plantar Árvore
+</button>
+
+<p id="mensagem" style="font-size:24px; margin-top:20px;"></p>
+</section>
+
+<section id="quiz">
+<h2>🌎 Quiz Sustentável</h2>
+<br>
+
+<p style="font-size:24px;">
+O que ajuda o meio ambiente?
+</p>
+<br>
+
+<button class="errado" onclick="resposta('errado')">
+🔥 Queimadas
+</button>
+
+<button class="certo" onclick="resposta('certo')">
+🌳 Reflorestamento
+</button>
+
+<p id="resultado" style="font-size:26px; margin-top:20px;"></p>
+</section>
+
+<section id="miniGame"><h2>💧 Mini Game Final</h2><p style="font-size:22px; margin-top:15px;">A água é essencial para a vida e para a produção no campo.<br>Evite desperdícios!</p><div id="torneira" style="font-size:70px;margin-top:30px;">🚰💧💧💧</div><button onclick="fecharTorneira()" id="botaoAgua">💧 Fechar Torneira</button><p id="resultadoAgua" style="font-size:24px;font-weight:bold;margin-top:25px;"></p></section>
+
+</section>
+
+<section id="mensagemFinal">
+
+<h2>🌍 Nosso Futuro Começa Hoje</h2>
+
+<p>
+O campo produz alimento, gera empregos e movimenta o país.<br><br>
+
+Mas crescer de verdade significa produzir com responsabilidade.<br><br>
+
+Cuidar da água, preservar as florestas e investir em tecnologia
+é garantir que as próximas gerações também tenham um futuro.<br><br>
+
+Cada pequena atitude faz diferença.<br>
+Plantar hoje é construir um futuro sustentável, equilibrando a produção e o meio ambiente.
+</p>
+
+</section>
+
+<br><br>
+
+<button onclick="botaoFinalClique()" id="botaoFinal">
+🌍 Assumir Compromisso
+</button>
+
+<footer>
+Criado para o Concurso Agrinho 2026 🌱
+feito por Derick
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
